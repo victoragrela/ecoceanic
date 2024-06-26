@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda e opiniões</title>
+    <link rel="stylesheet" href="../css/ajuda.css">
+    <script defer src="../js/ajuda.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="nav__bar">
+            <div class="nav__navinha">
+                <div class="nav__logo">
+                    <img class="tartaruga" src="../images/turtle-512.png" alt="Logo da EcOceanic">
+                    <h1>ECOCEANIC</h1>
+                </div>                    
+                <a href="./home.html">HOME</a>
+                <a href="./equipe.html">EQUIPE</a>
+                <a class="ajuda" href="">AJUDA</a>
+            </div>
+            <a class="login" href="./login.html">LOGIN</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="titulo">Formulário de Perguntas e Críticas</h1>
+        <form class="form" id="formReceptor1">
+            <label>Possui alguma dúvida sobre quem nós somos, como trabalhamos ou sobre o nosso projeto? Mande para nós!</label>
+            <input class="form__input caixa1" type="text" id="duvida" name="duvida" placeholder="Insira aqui sua dúvida..." required aria-label="Insira sua dúvida">
+            <button class="botao" type="submit">ENVIAR</button>
+        </form>
+        <form class="form" id="formReceptor2">
+            <label>Tem alguma opinião para melhorarmos a EcOceanic juntos?</label>
+            <input class="form__input caixa2" type="text" id="critica" name="critica" placeholder="Insira aqui sua opinião..." required aria-label="Insira sua opinião">
+            <button class="botao" type="submit">ENVIAR</button>
+        </form>
+    </main>
+</body>
+</html>

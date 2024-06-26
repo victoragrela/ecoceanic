@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'montserrat', sans-serif;
+    height: 100vh;
+    background: url(../images/ondas.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #e2e2e2;
+    box-shadow: 0px 0px 3vh rgba(0, 0, 0, 5);
+    border-radius: 0 0 0.8vw 0.8vw;
+    margin-bottom: 5vh;
+}
+
+.cabecalho a {
+    color: #000;
+    font-size: 1.5vw;
+    border-radius: 0.8vw;
+    transition: 0.2s;
+    height: 50%;
+}
+
+.cabecalho a:hover {
+    color: #e2e2e2;
+    background-color: #0A363E;
+    box-shadow: 0px 0px 0.8vw rgba(0, 0, 0, 0.5);
+}
+
+.nav__bar {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.nav__logo h1 {
+    color: #000;
+    font-size: 1.5vw;
+}
+
+.tartaruga {
+    width: 4vw;
+    transition: 0.2s;
+    margin-right: 1vw;
+}
+
+.nav__navinha {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__navinha a {
+    padding: 0.4em 0.5em;
+    margin: 0 1vw;
+}
+
+.login {
+    padding: 0.4em 0.5em;
+    margin: 0 3vw 0 0;
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 0.4vh;
+}
+
+.titulo {
+    display: flex;
+    background-color: #e2e2e2;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.8vw;
+    box-shadow: 0px 0px 3vh rgba(0, 0, 0, 1);
+    padding: 1vw 2vw;
+    font-size: 2vw;
+}
+
+.form p {
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2e2;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8vw;
+    box-shadow: 0px 0px 3vh rgba(0, 0, 0, 1);
+    gap: 2vw;
+}
+
+#email {
+    margin-top: 3vw;
+}
+
+.form__input {
+    width: 60%;
+    height: 3.5vw;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    box-shadow: 0px 0px 1vh rgba(0, 0, 0, 0.3);
+}
+
+.mostrar__senha {
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+#mostrarSenha {
+    width: 1.3vw;
+    height: 1.3vw;
+    margin-right: 0.5vw;
+}
+
+#mostrarSenha:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    padding: 0.8vw 1.8vw;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    border-radius: 0.5vw;
+    border: none;
+    box-shadow: 0px 0px 1vh rgba(0, 0, 0, 0.3);
+    transition: 0.1s;
+}
+
+.botao:hover {
+    background-color: #0A363E;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+
+.form__cadastro {
+    font-size: 1.5vw;
+    color: #0A363E;
+    margin-bottom: 2vw;
+    padding: 1vw 2vw;
+    transition: 0.2s;
+}
+
+.form__cadastro:hover {
+    opacity: 0.5;
+}
+
+@media(max-width:768px) {
+
+    .cabecalho a {
+        font-size: 2.5vw;
+    }
+
+    .titulo {
+        font-size: 3vw;
+    }
+
+    .form {
+        gap: 6vw;
+        width: 75vw;
+    }
+
+    .form p, .form a {
+        font-size: 2.5vw;
+    }
+
+    .form__input {
+        font-size: 2.5vw;
+        border-radius: 1.5vw;
+        padding-left: 1.5vw;
+        height: 7vw;
+        width: 80%;
+    }
+    
+    #mostrarSenha {
+        width: 3vw;
+        height: 3vw;
+        margin-right: 1vw;
+    }
+
+    .mostrar__senha {
+        font-size: 2.5vw;
+    }
+
+    .botao {
+        font-size: 2.5vw;
+        border-radius: 1.5vw;
+        padding: 2vw 4vw;
+    }
+}
+
+@media(max-width:426px) {
+
+    .cabecalho a {
+        font-size: 3.5vw;
+    }
+
+    .titulo {
+        font-size: 5vw;
+    }
+
+    .form {
+        gap: 6vw;
+        width: 85vw;
+    }
+
+    .form p, .form a {
+        font-size: 4.5vw;
+    }
+
+    .form__input {
+        font-size: 4vw;
+        border-radius: 1vw;
+        padding-left: 1.5vw;
+        height: 10vw;
+        width: 80%;
+    }
+
+    #mostrarSenha {
+        width: 4vw;
+        height: 4vw;
+        margin-right: 1vw;
+    }
+
+    .mostrar__senha {
+        font-size: 4vw;
+    }
+
+    .botao {
+        font-size: 4.5vw;
+        border-radius: 2vw;
+        padding: 2vw 4vw;
+    }
+}
